@@ -33,16 +33,16 @@ Una vez que termines la tarea, envía un enlace URL a tu repositorio o tu solici
 
 ### Sistema de inventario de automóviles
 
-1. Supongamos que estás construyendo un sistema de inventario de automóviles. Todos los automóviles tienen un `vinNumber`, `make`, `model` y `mileage`. Pero ningún automóvil es solo un automóvil cualquiera. Cada automóvil puede ser un `Sedan`, un `UtilityVehicle` o un `Truck`.
-2. Crea una clase abstracta llamada `Car` y define las siguientes propiedades y comportamientos:
+1. Supongamos que estás construyendo un sistema de inventario de automóviles. Todos los automóviles tienen un `vinNumber`, `make`, `model` y `mileage`. Pero ningún automóvil es solo un automóvil cualquiera. Cada automóvil puede ser un `vehicles.Sedan`, un `vehicles.UtilityVehicle` o un `vehicles.Truck`.
+2. Crea una clase abstracta llamada `vehicles.Car` y define las siguientes propiedades y comportamientos:
    - `vinNumber`: una `String` que representa el número de VIN del automóvil
    - `make`: una `String` que representa la marca del automóvil
    - `model`: una `String` que representa el modelo del automóvil
    - `mileage`: un `int` que representa el kilometraje del automóvil
    - `getInfo()`: un método que devuelve una `String` que contiene todas las propiedades del automóvil en un formato legible
-3. Crea tres clases que extiendan `Car`: `Sedan`, `UtilityVehicle` y `Truck`.
-4. Los objetos de `UtilityVehicle` deben tener una propiedad adicional `fourWheelDrive`, un `boolean` que representa si el vehículo tiene tracción en las cuatro ruedas.
-5. Los objetos de `Truck` deben tener una propiedad adicional `towingCapacity`, un `double` que representa la capacidad de remolque del camión.
+3. Crea tres clases que extiendan `vehicles.Car`: `vehicles.Sedan`, `vehicles.UtilityVehicle` y `vehicles.Truck`.
+4. Los objetos de `vehicles.UtilityVehicle` deben tener una propiedad adicional `fourWheelDrive`, un `boolean` que representa si el vehículo tiene tracción en las cuatro ruedas.
+5. Los objetos de `vehicles.Truck` deben tener una propiedad adicional `towingCapacity`, un `double` que representa la capacidad de remolque del camión.
 
 <br>
 
