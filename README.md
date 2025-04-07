@@ -70,6 +70,20 @@ Una vez que termines la tarea, envía un enlace URL a tu repositorio o tu solici
 5. En su `README.md`, incluye un ejemplo de cuándo `IntArrayList` sería más eficiente y cuándo `IntVector` sería más eficiente.
 
 <br>
+<!--5. En su `README.md`, incluye un ejemplo de cuándo `IntArrayList` sería más eficiente y cuándo `IntVector` sería más eficiente.-->
+Ejemplo de IntArrayList e IntVector:
+IntArrayList --> Crecimiento moderado del espacio, aumentándolo en un 50% si está lleno, de manera controlada. 
+Es más eficiente en cuanto uso de memoria, reduciendo la cantidad de espacio no utilizado.
+Se utiliza donde rara vez los elementos llegan alcanzar el límite del array.
+Ejemplo, se usa en el registro de datos periódicos y en bajo número.
+
+IntVector --> Crecimiento rápido y significativo, se espera que los elementos aumenten rápidamente.
+Se utilizan en entornos donde el costo de redimensionar es significativo. 
+Es más eficiente con respecto que supone un menor número de operaciones de copia a lo largo del tiempo y con sistemas de memoria disponible.
+Ejemplo, Sistemas de monitoreo donde necesitamos guardar grandes bloques de datos con frecuencia. Registro de logs de una aplicación.
+
+
+<br>
 
 ## FAQs (Preguntas frecuentes)
 
@@ -77,7 +91,7 @@ Una vez que termines la tarea, envía un enlace URL a tu repositorio o tu solici
 
 <details>
   <summary style="font-size: 16px; cursor: pointer; outline: none; font-weight: bold;">Estoy atascado y no sé cómo resolver el problema o por dónde empezar. ¿Qué debo hacer?</summary>
-
+   
   <!-- ✅ -->
 
   Si estás atascado con tu código y no sabes cómo resolver el problema o por dónde empezar, debes dar un paso atrás y tratar de formular una pregunta clara y directa sobre el problema específico que enfrentas. El proceso que seguirás al tratar de definir esta pregunta te ayudará a limitar el problema y a encontrar soluciones potenciales.

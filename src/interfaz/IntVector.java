@@ -2,7 +2,7 @@ package interfaz;
 
 public class IntVector implements IntList{
 
-   int[] intVector = new int[20];
+   int[] intVector = new int[10];
     int count = 0;
 
     @Override
@@ -21,6 +21,9 @@ public class IntVector implements IntList{
 
     @Override
     public void get(int id){
-
+        if (id < 0 || id >= count){
+            throw new IndexOutOfBoundsException("Indice fuera de rengo");
+        }
+        System.out.println("Elemento en índice " + id + " : " + intVector[id]);
     }
 }

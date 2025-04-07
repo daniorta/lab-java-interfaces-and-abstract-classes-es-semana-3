@@ -1,12 +1,9 @@
 package interfaz;
 
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-
 public class IntArrayList implements IntList{
 
     //ARRAY
-    int[] arrayList = new int[10];
+    int[] arrayList = new int[20];
     int count = 0;
 
     @Override
@@ -30,8 +27,12 @@ public class IntArrayList implements IntList{
 
     @Override
     public void get(int id) {
-
+        if(id < 0 || id >= count){
+            throw new  IndexOutOfBoundsException("Índice fuera de rango.");
+        }
+        System.out.println("Elemento en Índice " + id + " : " + arrayList[id]);
     }
+
 
 
 }

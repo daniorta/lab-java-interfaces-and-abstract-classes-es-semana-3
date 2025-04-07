@@ -1,7 +1,9 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-import vehicles.Car;
+import interfaz.IntArrayList;
+import interfaz.IntList;
+import interfaz.IntVector;
 import vehicles.Sedan;
 import vehicles.Truck;
 import vehicles.UtilityVehicle;
@@ -28,10 +30,11 @@ public class Main {
         //Ejercicio 3. Servicio de transmision de video.
         playVideo();
 
-        //Ejercicio de Interfaz IntList
-
-
-
+        //Ejercicio 4. Interfaz IntList
+        //IntArrayList
+        arrayList();
+        //Intvector
+        vectorList();
 
 
     }
@@ -83,7 +86,36 @@ public class Main {
 
 
     //Ejercicio de Interfaz IntList
+    //IntArrayList
+    public static void arrayList(){
+        IntList intArrayList = new IntArrayList();
 
+        //Agregar elementos en el IntArrayList
+        for(int i = 0; i < 15; i++){
+            intArrayList.add(i);
+        }
+
+        //Intentar obtener los elementos y mostrarlos
+        System.out.println("\nElementos en IntArrayList:");
+        for(int i = 0; i < 15; i++){
+            intArrayList.get(i);
+        }
+    }
+
+    //IntVector
+    public static void vectorList(){
+        IntList intVector = new IntVector();
+        //Agregamos elementos a nuestro intvector
+        for( int i = 0; i < 40; i++){
+            intVector.add(i);
+        }
+
+        //Mostramos el vector
+        System.out.println("\nElementos de IntVector:");
+        for(int i = 0; i < 40; i++){
+            intVector.get(i);
+        }
+    }
 
 
 }
