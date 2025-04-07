@@ -28,9 +28,14 @@ public class Main {
         //Ejercicio 3. Servicio de transmision de video.
         playVideo();
 
+        //Ejercicio de Interfaz IntList
+
+
+
 
 
     }
+
 
     //Ejercicio 1.1
     public static double decimalDouble(BigDecimal number){
@@ -75,6 +80,10 @@ public class Main {
         movie1.getInfo();
 
     }
+
+
+    //Ejercicio de Interfaz IntList
+
 
 
 }
